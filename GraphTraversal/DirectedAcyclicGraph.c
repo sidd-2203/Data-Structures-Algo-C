@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define VERTICES 6
-#define EDGES 5
+#define EDGES 6
 
 int min(int a, int b)
 {
@@ -37,7 +37,7 @@ void AddEdge(int **g, int u, int v)
 void initialise(int **graph, int vertices)
 {
     int Vertex[] = {1, 2, 3, 4, 5, 6}; // just for info
-    int Edges[] = {1, 2, 1, 4, 1, 3, 1, 5, 1, 6};
+    int Edges[] = {1, 2, 1, 4, 1, 3, 1, 5, 1, 6, 6, 4};
 
     for (int i = 0; i < 2 * EDGES; i += 2)
     {
@@ -48,7 +48,7 @@ int checkAcyclic(int **g, int vertices, int *visited, int pos)
 {
     // returns 1 if it is not cyclic else
     // 0 for cyclic
-    printf("\n");
+    // printf("\n");
     for (int i = 1; i <= vertices; i++)
     {
         if (g[pos][i] == 1)
@@ -57,7 +57,7 @@ int checkAcyclic(int **g, int vertices, int *visited, int pos)
                 return 0;
             else
             {
-                printf("%d ", i);
+                // printf("%d ", i);
                 visited[i] = 1;
                 int k = checkAcyclic(g, vertices, visited, i);
                 if (k == 1)
