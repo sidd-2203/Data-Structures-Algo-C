@@ -1,0 +1,30 @@
+para1: "The vaccine was more than 90% effective in a late-stage US-based clinical trial, according to the company. The government has also ordered 300 million doses of another vaccine from Indian firm Biological E."
+
+para2: "India has so far given more than 260 million doses of three approved vaccines - Covishield, Covaxin and Sputnik V. It also gave approval to Indian pharma company Cipla on Tuesday to import Moderna vaccine, which has shown nearly 95% efficacy against Covid-19."
+
+para3: "With the total case tally of more than 30 million, India is now only behind the United States which has reported over 33 million cases. With 18.4 million cases, Brazil is now at number three."
+
+para4: "The $206m (£145m) order is the first India has signed for a jab that has not received emergency approval. The vaccine has been developed in collaboration with US-based Dynavax and Baylor College of Medicine."
+
+para5: "India received its first batch of 125 million doses of the vaccine in May. The Russian Direct Investment Fund (RDIF), which is marketing the vaccine, has signed deals to produce more than 750 million doses of the vaccine with 6 more domestic vaccine makers, according to reports."
+
+-----------------------------
+
+Q: Given a set of 5 paragraphs (above) containing news on covid-19 vaccination.
+
+The paragraph names are: para1, para2, para3, para4 and para5.
+
+Write C code to read the above mentioned paragraphs and write the following functions:
+
+1. Create_Token (): Which take input from para1, separate all the valid strings into word tokens and store these word tokens in some Structure/array (name: word_tokens1). Apply the same for all the 5 paragraphs.
+
+2. Remove_Numerals(): Read the 'word_tokens1' of word tokens and remove all numerals (numbers if any). Apply the same for all the 5 paragraphs.
+
+3. Find_Frequnecy( ): Read the 'word_tokens1' of word tokens and count the frequency of each word and store the
+(word, frequency) pair of each unique word in 'word_freq'. Apply the same for all five paragraph but store in the same (word_freq).
+
+4. Display_Most_Rare_words( ): Which display 10 most rare words from these given news articles.
+
+The time complexity of the functions in step-2 and step-4 should be in between O(N.log N) to O(N) where N is the number of unique words in freqfile.
+
+If you use one of the most efficient data structures from BST, AVL, Heap and Hash table you will get bonus marks.
