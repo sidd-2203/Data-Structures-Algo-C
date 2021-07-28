@@ -4,27 +4,6 @@
 #define VERTICES 6
 #define EDGES 6
 
-int min(int a, int b)
-{
-    if (a > b)
-        return b;
-    else
-        return a;
-}
-
-void Display_List(int **head, int vertices)
-{
-    printf("\n");
-    for (int i = 1; i <= vertices; i++)
-    {
-        for (int j = 1; j <= vertices; j++)
-        {
-            printf("%d ", head[i][j]);
-        }
-        printf("\n");
-    }
-}
-
 void removeEdge(int **g, int u, int v)
 {
     g[u][v] = 0;
